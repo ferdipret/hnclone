@@ -1,0 +1,1 @@
+export const SET_STORIES_IDS_LIST = 'SET_STORIES_IDS_LIST'
