@@ -1,14 +1,18 @@
 import React from 'react'
+import { cleanUrl } from '../utils/index'
+
 import '../styles/story.css'
 
 function Story({ title, by, url }) {
   return (
     <div className="story-card">
-      <h4 className="blue">{title}</h4>
-      <div>
-        <span>By</span> {by}
+      <div className="story-card-title">
+        {title}
+        <span className="story-card-author"> By {by}</span>
       </div>
-      <a href={url}>{url}</a>
+
+      <div />
+      <a href={url}>{cleanUrl(url)}</a>
     </div>
   )
 }

@@ -18,17 +18,21 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <h4 />,
-        <div>
-          <span>
-                    By
+        <div
+          className="story-card-title"
+>
+          <span
+                    className="story-card-author"
+          >
+                     By 
           </span>
-           
 </div>,
+        <div />,
         <a
           href={undefined}
 />,
       ],
+      "className": "story-card",
     },
     "ref": null,
     "rendered": Array [
@@ -37,41 +41,47 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": undefined,
-        },
-        "ref": null,
-        "rendered": null,
-        "type": "h4",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
           "children": Array [
-            <span>
-              By
-</span>,
-            " ",
             undefined,
+            <span
+              className="story-card-author"
+>
+               By 
+</span>,
           ],
+          "className": "story-card-title",
         },
         "ref": null,
         "rendered": Array [
+          undefined,
           Object {
             "instance": null,
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "By",
+              "children": Array [
+                " By ",
+                undefined,
+              ],
+              "className": "story-card-author",
             },
             "ref": null,
-            "rendered": "By",
+            "rendered": Array [
+              " By ",
+              undefined,
+            ],
             "type": "span",
           },
-          " ",
-          undefined,
         ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
         "type": "div",
       },
       Object {
@@ -96,17 +106,21 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <h4 />,
-          <div>
-            <span>
-                        By
+          <div
+            className="story-card-title"
+>
+            <span
+                        className="story-card-author"
+            >
+                         By 
             </span>
-             
 </div>,
+          <div />,
           <a
             href={undefined}
 />,
         ],
+        "className": "story-card",
       },
       "ref": null,
       "rendered": Array [
@@ -115,41 +129,47 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": undefined,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": "h4",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
             "children": Array [
-              <span>
-                By
-</span>,
-              " ",
               undefined,
+              <span
+                className="story-card-author"
+>
+                 By 
+</span>,
             ],
+            "className": "story-card-title",
           },
           "ref": null,
           "rendered": Array [
+            undefined,
             Object {
               "instance": null,
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "By",
+                "children": Array [
+                  " By ",
+                  undefined,
+                ],
+                "className": "story-card-author",
               },
               "ref": null,
-              "rendered": "By",
+              "rendered": Array [
+                " By ",
+                undefined,
+              ],
               "type": "span",
             },
-            " ",
-            undefined,
           ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
           "type": "div",
         },
         Object {
