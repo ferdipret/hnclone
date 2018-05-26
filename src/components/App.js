@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import store from '../store'
+import { fetchTopStories } from '../services'
+import * as actions from '../actions'
 
 class App extends Component {
   constructor() {
@@ -12,6 +14,12 @@ class App extends Component {
      * The store will use the same api as Redux
      */
     this.state = store(undefined, {})
+  }
+
+  componentDidMount() {
+    fetchTopStories('/topstories.json').then(res =>
+      this.dispatch(actions.setStoriesIdsList(res.data)),
+    )
   }
 
   render() {

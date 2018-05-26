@@ -1,9 +1,20 @@
 import React from 'react'
-import { shallow } from 'enzyme'
+import { mount, shallow } from 'enzyme'
+import axios from 'axios'
+import MockAdapter from 'axios-mock-adapter'
 import App from './App'
-
 import store, { defaultState } from '../store'
 import { setStoriesIdsList } from '../actions'
+import { fetchTopStories } from '../services'
+import * as constants from '../actions/constants'
+
+const mock = new MockAdapter(axios, { delayResponse: 2000 })
+
+export const responseData = ['1', '2', '3']
+
+mock
+  .onGet(`${constants.API_ENTRY_POINT}/topstories.json`)
+  .reply(200, responseData)
 
 describe('App', () => {
   const app = shallow(<App />)
@@ -17,7 +28,7 @@ describe('App', () => {
   })
 
   describe('calling `dispatch`', () => {
-    beforeEach(() => {
+    afterEach(() => {
       app.setState(defaultState)
     })
 
@@ -34,6 +45,14 @@ describe('App', () => {
 
       app.instance().dispatch(action)
       expect(app.state()).toEqual(defaultState)
+    })
+  })
+
+  describe('when mounted', () => {
+    it('should call the fetchTopStories service', () => {
+      return fetchTopStories('/topstories.json').then(() => {
+        expect(app.state('storiesIdsList')).toEqual(['1', '2', '3'])
+      })
     })
   })
 })
