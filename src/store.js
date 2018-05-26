@@ -21,6 +21,7 @@ export default (state = defaultState, action) => {
       newState = {
         ...state,
         stories: [...state.stories, ...action.payload],
+        numberOfStoriesLoaded: [...state.stories, ...action.payload].length,
       }
       break
 

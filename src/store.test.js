@@ -51,7 +51,7 @@ describe('Store', () => {
             name: 'Baz',
           },
         ],
-        numberOfStoriesLoaded: 0,
+        numberOfStoriesLoaded: 3,
       }
       const previousState = initialState
 
