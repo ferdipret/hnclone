@@ -1,7 +1,7 @@
 import axios from 'axios'
 import MockAdapter from 'axios-mock-adapter'
 import { fetchTopStories, fetchStoryDetails } from './index'
-import { topStoriesResponse, storyDetailsResponse } from './__mocks__'
+import { topStoriesResponse, storyDetailsResponse } from './__mocks__/services'
 
 const mock = new MockAdapter(axios)
 

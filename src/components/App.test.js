@@ -8,7 +8,10 @@ import { setStoriesIdsList } from '../actions'
 import { fetchTopStories, fetchStoryDetails } from '../services'
 import * as constants from '../actions/constants'
 import { calculateNextStoryIds } from '../utils'
-import { topStoriesResponse, storyDetailsResponse } from '../services/__mocks__'
+import {
+  topStoriesResponse,
+  storyDetailsResponse,
+} from '../services/__mocks__/services'
 
 const mock = new MockAdapter(axios, { delayResponse: 2000 })
 

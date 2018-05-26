@@ -3,6 +3,7 @@ import store from '../store'
 import { fetchTopStories, fetchStoryDetails } from '../services'
 import * as actions from '../actions'
 import { calculateNextStoryIds } from '../utils'
+import StoriesList from './StoriesList'
 
 class App extends Component {
   constructor() {
@@ -24,7 +25,13 @@ class App extends Component {
   }
 
   render() {
-    return <h1 className="app-title">App Component</h1>
+    const { stories } = this.state
+    return (
+      <React.Fragment>
+        <h1 className="app-title">App Component</h1>
+        <StoriesList stories={stories} />
+      </React.Fragment>
+    )
   }
 
   /**

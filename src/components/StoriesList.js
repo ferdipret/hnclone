@@ -1,7 +1,8 @@
 import React from 'react'
+import Story from './Story'
 
-function StoriesList() {
-  return <div>StoriesList Component</div>
+function StoriesList({ stories }) {
+  return stories && stories.map(story => <Story key={story.id} {...story} />)
 }
 
 export default StoriesList
