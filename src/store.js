@@ -1,6 +1,6 @@
 import * as constants from './actions/constants'
 
-const defaultState = {
+export const defaultState = {
   storiesIdsList: [],
   stories: [],
 }
