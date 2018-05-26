@@ -6,3 +6,10 @@ export function setStoriesIdsList(payload) {
     payload,
   }
 }
+
+export function setStoriesListData(payload) {
+  return {
+    type: constants.SET_STORIES_LIST_DATA,
+    payload,
+  }
+}
