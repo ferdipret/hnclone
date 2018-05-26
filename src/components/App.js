@@ -34,16 +34,12 @@ class App extends Component {
    */
   fetchMoreStories = storiesLoaded => {
     const { storiesIdsList } = this.state
-    let newStoriesDetails = []
 
-    calculateNextStoryIds(storiesIdsList, storiesLoaded).map(storyId =>
-      fetchStoryDetails('/item', storyId).then(res => {
-        console.log(res)
-        newStoriesDetails = newStoriesDetails.concat(res.data)
-
-        // Here is where we want to set newStoriesDetails in the store
-      }),
-    )
+    return Promise.all(
+      calculateNextStoryIds(storiesIdsList, storiesLoaded).map(storyId =>
+        fetchStoryDetails('/item', storyId).then(res => res.data),
+      ),
+    ).then(res => this.dispatch(actions.setStoriesListData(res)))
   }
 
   /**

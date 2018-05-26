@@ -5,13 +5,18 @@ import MockAdapter from 'axios-mock-adapter'
 import App from './App'
 import store, { defaultState } from '../store'
 import { setStoriesIdsList } from '../actions'
-import { fetchTopStories } from '../services'
+import { fetchTopStories, fetchStoryDetails } from '../services'
 import * as constants from '../actions/constants'
 import { calculateNextStoryIds } from '../utils'
+import { topStoriesResponse, storyDetailsResponse } from '../services/__mocks__'
 
 const mock = new MockAdapter(axios, { delayResponse: 2000 })
 
 export const responseData = ['1', '2', '3']
+
+mock
+  .onGet(/https:\/\/hacker-news.firebaseio.com\/v0\/item\/\d+\.json/)
+  .reply(200, storyDetailsResponse)
 
 mock
   .onGet(`${constants.API_ENTRY_POINT}/topstories.json`)
@@ -57,11 +62,21 @@ describe('App', () => {
     })
   })
 
-  describe('when calling `fetchMoreStories`', () => {
-    it('should fetch the next 10 stories', () => {
-      app.instance().fetchMoreStories(0)
+  it('should be able to find item details', () => {
+    return fetchStoryDetails('/item', 1).then(res => {})
+  })
 
-      // expect(app.state('stories')).toEqual()
+  describe('when calling `fetchMoreStories`', () => {
+    it(`should fetch the next 10 stories, if there are 10 available, otherwise
+        fetch the remaining stories' details
+    `, () => {
+      app.instance().fetchMoreStories()
+
+      expect(app.state('stories')).toEqual([
+        storyDetailsResponse,
+        storyDetailsResponse,
+        storyDetailsResponse,
+      ])
     })
   })
 })
