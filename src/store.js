@@ -16,6 +16,14 @@ export default (state = defaultState, action) => {
         storiesIdsList: action.payload,
       }
       break
+
+    case constants.SET_STORIES_LIST_DATA:
+      newState = {
+        ...state,
+        stories: [...state.stories, ...action.payload],
+      }
+      break
+
     default:
       newState = state
       break
