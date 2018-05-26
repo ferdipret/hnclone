@@ -55,4 +55,8 @@ describe('App', () => {
       })
     })
   })
+
+  describe('when calling `fetchMoreStories`', () => {
+    it('should fetch the next 10 stories', () => {})
+  })
 })

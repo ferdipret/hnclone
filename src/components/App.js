@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import store from '../store'
-import { fetchTopStories } from '../services'
+import { fetchTopStories, fetchStoryDetails } from '../services'
 import * as actions from '../actions'
 
 class App extends Component {
@@ -17,14 +17,21 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetchTopStories('/topstories').then(res =>
-      this.dispatch(actions.setStoriesIdsList(res.data)),
-    )
+    fetchTopStories('/topstories')
+      .then(res => this.dispatch(actions.setStoriesIdsList(res.data)))
+      .then(res => this.fetchMoreStories(res.numberOfStoriesLoaded))
   }
 
   render() {
     return <h1 className="app-title">App Component</h1>
   }
+
+  /**
+   * Should fetch a list of stories and add it to `stories` in the store
+   *
+   * @params {number} storiesLoaded - The number of stories that's been loaded
+   */
+  fetchMoreStories = () => {}
 
   /**
    * Will dispatch actions to the store which will return our new state
