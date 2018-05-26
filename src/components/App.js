@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import store from '../store'
 import { fetchTopStories, fetchStoryDetails } from '../services'
 import * as actions from '../actions'
+import { calculateNextStoryIds } from '../utils'
 
 class App extends Component {
   constructor() {
@@ -31,7 +32,19 @@ class App extends Component {
    *
    * @params {number} storiesLoaded - The number of stories that's been loaded
    */
-  fetchMoreStories = () => {}
+  fetchMoreStories = storiesLoaded => {
+    const { storiesIdsList } = this.state
+    let newStoriesDetails = []
+
+    calculateNextStoryIds(storiesIdsList, storiesLoaded).map(storyId =>
+      fetchStoryDetails('/item', storyId).then(res => {
+        console.log(res)
+        newStoriesDetails = newStoriesDetails.concat(res.data)
+
+        // Here is where we want to set newStoriesDetails in the store
+      }),
+    )
+  }
 
   /**
    * Will dispatch actions to the store which will return our new state

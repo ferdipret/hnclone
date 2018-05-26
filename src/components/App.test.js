@@ -7,6 +7,7 @@ import store, { defaultState } from '../store'
 import { setStoriesIdsList } from '../actions'
 import { fetchTopStories } from '../services'
 import * as constants from '../actions/constants'
+import { calculateNextStoryIds } from '../utils'
 
 const mock = new MockAdapter(axios, { delayResponse: 2000 })
 
@@ -57,6 +58,10 @@ describe('App', () => {
   })
 
   describe('when calling `fetchMoreStories`', () => {
-    it('should fetch the next 10 stories', () => {})
+    it('should fetch the next 10 stories', () => {
+      app.instance().fetchMoreStories(0)
+
+      // expect(app.state('stories')).toEqual()
+    })
   })
 })
