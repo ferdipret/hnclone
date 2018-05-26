@@ -5,6 +5,7 @@ describe('Store', () => {
   const initialState = {
     storiesIdsList: [],
     stories: [],
+    numberOfStoriesLoaded: 0,
   }
 
   describe('when initializing', () => {
@@ -18,6 +19,7 @@ describe('Store', () => {
       const expectedState = {
         storiesIdsList: [1, 2, 3],
         stories: [],
+        numberOfStoriesLoaded: 0,
       }
       const previousState = initialState
 

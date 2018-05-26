@@ -50,7 +50,7 @@ describe('App', () => {
 
   describe('when mounted', () => {
     it('should call the fetchTopStories service', () => {
-      return fetchTopStories('/topstories.json').then(() => {
+      return fetchTopStories('/topstories').then(() => {
         expect(app.state('storiesIdsList')).toEqual(['1', '2', '3'])
       })
     })

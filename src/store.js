@@ -3,6 +3,7 @@ import * as constants from './actions/constants'
 export const defaultState = {
   storiesIdsList: [],
   stories: [],
+  numberOfStoriesLoaded: 0,
 }
 
 export default (state = defaultState, action) => {

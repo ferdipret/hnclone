@@ -17,7 +17,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetchTopStories('/topstories.json').then(res =>
+    fetchTopStories('/topstories').then(res =>
       this.dispatch(actions.setStoriesIdsList(res.data)),
     )
   }
@@ -31,9 +31,10 @@ class App extends Component {
    * and set the state in `App`
    */
   dispatch = action => {
-    action &&
-      action.type &&
+    if (action && action.type) {
       this.setState(prevState => store(prevState, action))
+      return this.state
+    }
   }
 }
 
