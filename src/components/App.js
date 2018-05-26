@@ -20,7 +20,7 @@ class App extends Component {
   componentDidMount() {
     fetchTopStories('/topstories')
       .then(res => this.dispatch(actions.setStoriesIdsList(res.data)))
-      .then(res => this.fetchMoreStories(res.numberOfStoriesLoaded))
+      .then(res => this.fetchMoreStories())
   }
 
   render() {
@@ -32,12 +32,12 @@ class App extends Component {
    *
    * @params {number} storiesLoaded - The number of stories that's been loaded
    */
-  fetchMoreStories = storiesLoaded => {
-    const { storiesIdsList } = this.state
+  fetchMoreStories = () => {
+    const { storiesIdsList, numberOfStoriesLoaded } = this.state
 
     return Promise.all(
-      calculateNextStoryIds(storiesIdsList, storiesLoaded).map(storyId =>
-        fetchStoryDetails('/item', storyId).then(res => res.data),
+      calculateNextStoryIds(storiesIdsList, numberOfStoriesLoaded).map(
+        storyId => fetchStoryDetails('/item', storyId).then(res => res.data),
       ),
     ).then(res => this.dispatch(actions.setStoriesListData(res)))
   }
