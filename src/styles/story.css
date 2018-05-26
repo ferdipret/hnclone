@@ -1,0 +1,23 @@
+/* prettier-ignore */
+.story-card {
+  background-color: hsla(0, 0%, 100%);
+  border-radius: 2px;
+  box-shadow: 0px 1px 5px 0px hsla(0, 0%, 0%, 0.2),
+              0px 2px 2px 0px hsla(0, 0%, 0%, 0.14),
+              0px 3px 1px -2px hsla(0, 0%, 0%, 0.12);
+  cursor: pointer;
+  overflow: hidden; 
+  text-overflow: ellipsis;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+              box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  white-space: nowrap;
+  width: 250px;
+
+}
+
+.story-card:hover {
+  background-color: hsla(0, 0%, 90%);
+  box-shadow: 0px 1px 3px 0px hsla(0, 0%, 0%, 0.2),
+    0px 1px 1px 0px hsla(0, 0%, 0%, 0.14),
+    0px 2px 1px -2px hsla(0, 0%, 0%, 0.12);
+}
