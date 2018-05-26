@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import store from '../store'
-import { fetchTopStories } from '../services'
+import { fetchTopStories, fetchStoryDetails } from '../services'
 import * as actions from '../actions'
+import { calculateNextStoryIds } from '../utils'
+import StoriesList from './StoriesList'
 
 class App extends Component {
   constructor() {
@@ -17,13 +19,34 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetchTopStories('/topstories.json').then(res =>
-      this.dispatch(actions.setStoriesIdsList(res.data)),
-    )
+    fetchTopStories('/topstories')
+      .then(res => this.dispatch(actions.setStoriesIdsList(res.data)))
+      .then(res => this.fetchMoreStories())
   }
 
   render() {
-    return <h1 className="app-title">App Component</h1>
+    const { stories } = this.state
+    return (
+      <React.Fragment>
+        <h1 className="app-title">App Component</h1>
+        <StoriesList stories={stories} />
+      </React.Fragment>
+    )
+  }
+
+  /**
+   * Should fetch a list of stories and add it to `stories` in the store
+   *
+   * @params {number} storiesLoaded - The number of stories that's been loaded
+   */
+  fetchMoreStories = () => {
+    const { storiesIdsList, numberOfStoriesLoaded } = this.state
+
+    return Promise.all(
+      calculateNextStoryIds(storiesIdsList, numberOfStoriesLoaded).map(
+        storyId => fetchStoryDetails('/item', storyId).then(res => res.data),
+      ),
+    ).then(res => this.dispatch(actions.setStoriesListData(res)))
   }
 
   /**
@@ -31,9 +54,10 @@ class App extends Component {
    * and set the state in `App`
    */
   dispatch = action => {
-    action &&
-      action.type &&
+    if (action && action.type) {
       this.setState(prevState => store(prevState, action))
+      return this.state
+    }
   }
 }
 

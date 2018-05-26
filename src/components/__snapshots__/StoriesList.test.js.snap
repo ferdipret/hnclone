@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StoriesList renders properly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <StoriesList
+    stories={
+        Array [
+            Object {
+              "id": 1,
+              "name": "Foo",
+            },
+            Object {
+              "id": 2,
+              "name": "Bar",
+            },
+            Object {
+              "id": 3,
+              "name": "Baz",
+            },
+          ]
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Array [
+    <Story
+      id={1}
+      name="Foo"
+/>,
+    <Story
+      id={2}
+      name="Bar"
+/>,
+    <Story
+      id={3}
+      name="Baz"
+/>,
+  ],
+  Symbol(enzyme.__nodes__): Array [
+    Array [
+      <Story
+        id={1}
+        name="Foo"
+/>,
+      <Story
+        id={2}
+        name="Bar"
+/>,
+      <Story
+        id={3}
+        name="Baz"
+/>,
+    ],
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

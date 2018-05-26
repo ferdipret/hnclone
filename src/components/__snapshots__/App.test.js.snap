@@ -15,27 +15,91 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "host",
+    "nodeType": "function",
     "props": Object {
-      "children": "App Component",
-      "className": "app-title",
+      "children": Array [
+        <h1
+          className="app-title"
+>
+          App Component
+</h1>,
+        <StoriesList
+          stories={Array []}
+/>,
+      ],
     },
     "ref": null,
-    "rendered": "App Component",
-    "type": "h1",
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "App Component",
+          "className": "app-title",
+        },
+        "ref": null,
+        "rendered": "App Component",
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "stories": Array [],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": Symbol(react.fragment),
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "host",
+      "nodeType": "function",
       "props": Object {
-        "children": "App Component",
-        "className": "app-title",
+        "children": Array [
+          <h1
+            className="app-title"
+>
+            App Component
+</h1>,
+          <StoriesList
+            stories={Array []}
+/>,
+        ],
       },
       "ref": null,
-      "rendered": "App Component",
-      "type": "h1",
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "App Component",
+            "className": "app-title",
+          },
+          "ref": null,
+          "rendered": "App Component",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "stories": Array [],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": Symbol(react.fragment),
     },
   ],
   Symbol(enzyme.__options__): Object {
