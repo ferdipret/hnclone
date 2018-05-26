@@ -5,14 +5,15 @@ import '../styles/story.css'
 
 function Story({ title, by, url }) {
   return (
-    <div className="story-card">
-      <div className="story-card-title">
-        {title}
-        <span className="story-card-author"> By {by}</span>
-      </div>
+    <div className="story-card-wrapper">
+      <a href={url} className="story-card">
+        <div>
+          <div className="story-card-title">{title}</div>
+          <div className="story-card-author">By {by}</div>
+        </div>
 
-      <div />
-      <a href={url}>{cleanUrl(url)}</a>
+        <div className="story-card-link">{cleanUrl(url)}</div>
+      </a>
     </div>
   )
 }

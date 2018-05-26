@@ -34,65 +34,26 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": Array [
+      "children": <div
+        className="list-container"
+>
         <Story
-          id={1}
-          name="Foo"
-/>,
+                id={1}
+                name="Foo"
+        />
         <Story
-          id={2}
-          name="Bar"
-/>,
+                id={2}
+                name="Bar"
+        />
         <Story
-          id={3}
-          name="Baz"
-/>,
-      ],
-      "className": "list-container",
+                id={3}
+                name="Baz"
+        />
+</div>,
+      "className": "app-container",
     },
     "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": "1",
-        "nodeType": "function",
-        "props": Object {
-          "id": 1,
-          "name": "Foo",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": "2",
-        "nodeType": "function",
-        "props": Object {
-          "id": 2,
-          "name": "Bar",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": "3",
-        "nodeType": "function",
-        "props": Object {
-          "id": 3,
-          "name": "Baz",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-    ],
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
+    "rendered": Object {
       "instance": null,
       "key": undefined,
       "nodeType": "host",
@@ -152,6 +113,97 @@ ShallowWrapper {
           "type": [Function],
         },
       ],
+      "type": "div",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="list-container"
+>
+          <Story
+                    id={1}
+                    name="Foo"
+          />
+          <Story
+                    id={2}
+                    name="Bar"
+          />
+          <Story
+                    id={3}
+                    name="Baz"
+          />
+</div>,
+        "className": "app-container",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <Story
+              id={1}
+              name="Foo"
+/>,
+            <Story
+              id={2}
+              name="Bar"
+/>,
+            <Story
+              id={3}
+              name="Baz"
+/>,
+          ],
+          "className": "list-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "1",
+            "nodeType": "function",
+            "props": Object {
+              "id": 1,
+              "name": "Foo",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "2",
+            "nodeType": "function",
+            "props": Object {
+              "id": 2,
+              "name": "Bar",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "3",
+            "nodeType": "function",
+            "props": Object {
+              "id": 3,
+              "name": "Baz",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
       "type": "div",
     },
   ],
