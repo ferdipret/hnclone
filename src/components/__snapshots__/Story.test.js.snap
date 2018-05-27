@@ -23,6 +23,11 @@ ShallowWrapper {
 >
         <div>
                 <div
+                        className="story-card-time"
+                >
+                        27/05/2018
+                </div>
+                <div
                         className="story-card-title"
                 />
                 <div
@@ -31,6 +36,9 @@ ShallowWrapper {
                         By 
                 </div>
         </div>
+        <div
+                className="story-card-score"
+        />
         <div
                 className="story-card-link"
         />
@@ -46,6 +54,11 @@ ShallowWrapper {
         "children": Array [
           <div>
             <div
+                        className="story-card-time"
+            >
+                        27/05/2018
+            </div>
+            <div
                         className="story-card-title"
             />
             <div
@@ -54,6 +67,9 @@ ShallowWrapper {
                         By 
             </div>
 </div>,
+          <div
+            className="story-card-score"
+/>,
           <div
             className="story-card-link"
 />,
@@ -70,6 +86,11 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <div
+                className="story-card-time"
+>
+                27/05/2018
+</div>,
+              <div
                 className="story-card-title"
 />,
               <div
@@ -81,6 +102,18 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "27/05/2018",
+                "className": "story-card-time",
+              },
+              "ref": null,
+              "rendered": "27/05/2018",
+              "type": "div",
+            },
             Object {
               "instance": null,
               "key": undefined,
@@ -120,6 +153,18 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": undefined,
+            "className": "story-card-score",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": undefined,
             "className": "story-card-link",
           },
           "ref": null,
@@ -143,6 +188,11 @@ ShallowWrapper {
 >
           <div>
                     <div
+                              className="story-card-time"
+                    >
+                              27/05/2018
+                    </div>
+                    <div
                               className="story-card-title"
                     />
                     <div
@@ -151,6 +201,9 @@ ShallowWrapper {
                               By 
                     </div>
           </div>
+          <div
+                    className="story-card-score"
+          />
           <div
                     className="story-card-link"
           />
@@ -166,6 +219,11 @@ ShallowWrapper {
           "children": Array [
             <div>
               <div
+                            className="story-card-time"
+              >
+                            27/05/2018
+              </div>
+              <div
                             className="story-card-title"
               />
               <div
@@ -174,6 +232,9 @@ ShallowWrapper {
                             By 
               </div>
 </div>,
+            <div
+              className="story-card-score"
+/>,
             <div
               className="story-card-link"
 />,
@@ -190,6 +251,11 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <div
+                  className="story-card-time"
+>
+                  27/05/2018
+</div>,
+                <div
                   className="story-card-title"
 />,
                 <div
@@ -201,6 +267,18 @@ ShallowWrapper {
             },
             "ref": null,
             "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "27/05/2018",
+                  "className": "story-card-time",
+                },
+                "ref": null,
+                "rendered": "27/05/2018",
+                "type": "div",
+              },
               Object {
                 "instance": null,
                 "key": undefined,
@@ -232,6 +310,18 @@ ShallowWrapper {
                 "type": "div",
               },
             ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": undefined,
+              "className": "story-card-score",
+            },
+            "ref": null,
+            "rendered": null,
             "type": "div",
           },
           Object {
