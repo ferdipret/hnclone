@@ -5,7 +5,6 @@ import moment from 'moment'
 import '../styles/story.css'
 
 function Story({ title, by, url, time, score }) {
-  console.log(moment(time).format())
   return (
     <div className="story-card-wrapper">
       <a href={url} className="story-card">
@@ -16,6 +15,7 @@ function Story({ title, by, url, time, score }) {
           <div className="story-card-title">{title}</div>
           <div className="story-card-author">By {by}</div>
         </div>
+
         <div className="story-card-score">{score}</div>
 
         <div className="story-card-link">{cleanUrl(url)}</div>

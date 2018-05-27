@@ -64,7 +64,10 @@
   left: 100%;
 }
 
-.story-card:hover {
+.story-card-time {
+  color: white;
+  font-family: 'Sunflower', sans-serif;
+  margin-bottom: 10px;
 }
 
 .story-card-title {
@@ -79,12 +82,40 @@
   background: white;
   border-radius: 2px;
   color: hsl(24, 100%, 50%);
-  font-family: 'Lato', sans-serif;
+  font-family: 'Sunflower', sans-serif;
   font-size: 14px;
   margin-top: 5px;
   padding: 2px;
   text-transform: initial;
   width: fit-content;
+}
+
+.story-card-score {
+  align-items: center;
+  background-color: white;
+  border-radius: 50%;
+  bottom: 10px;
+  color: hsl(28, 100%, 50%);
+  display: flex;
+  font-family: 'Sunflower', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  height: 50px;
+  justify-content: center;
+  margin: 0 auto;
+  position: absolute;
+  right: 10px;
+  width: 50px;
+}
+
+.story-card-score::before {
+  border: 10px solid;
+  border-color: transparent transparent white transparent;
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: -25px;
+  transform: translateX(-50%);
 }
 
 .story-card-link {
