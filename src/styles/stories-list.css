@@ -1,0 +1,14 @@
+.list-container {
+  align-self: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px auto 0;
+  max-width: 1080px;
+  width: 90%;
+}
+
+.list-container:after {
+  content: '';
+  flex: auto;
+}
