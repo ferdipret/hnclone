@@ -22,6 +22,9 @@ ShallowWrapper {
         <StoriesList
           stories={Array []}
 />,
+        <ShowMoreBtn
+          fetchMoreStories={[Function]}
+/>,
       ],
     },
     "ref": null,
@@ -46,6 +49,17 @@ ShallowWrapper {
         "rendered": null,
         "type": [Function],
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "fetchMoreStories": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
     ],
     "type": Symbol(react.fragment),
   },
@@ -59,6 +73,9 @@ ShallowWrapper {
           <Header />,
           <StoriesList
             stories={Array []}
+/>,
+          <ShowMoreBtn
+            fetchMoreStories={[Function]}
 />,
         ],
       },
@@ -79,6 +96,17 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "stories": Array [],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "fetchMoreStories": [Function],
           },
           "ref": null,
           "rendered": null,
