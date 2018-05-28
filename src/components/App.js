@@ -4,8 +4,8 @@ import { fetchTopStories, fetchStoryDetails } from '../services'
 import * as actions from '../actions'
 import { calculateNextStoryIds } from '../utils'
 import StoriesList from './StoriesList'
-
 import Header from './Header'
+import ShowMoreBtn from './ShowMoreBtn'
 
 class App extends Component {
   constructor() {
@@ -27,11 +27,15 @@ class App extends Component {
   }
 
   render() {
-    const { stories } = this.state
+    const { stories, storiesIdsList } = this.state
     return (
       <React.Fragment>
         <Header />
         <StoriesList stories={stories} />
+        <ShowMoreBtn
+          fetchMoreStories={this.fetchMoreStories}
+          storiesLeft={storiesIdsList.length - stories.length}
+        />
       </React.Fragment>
     )
   }
