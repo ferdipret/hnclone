@@ -18,14 +18,28 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": <a
-        className="story-card"
+        className="story-card bg-color-2"
         href={undefined}
 >
-        <div>
+        <div
+                className="story-card-background-1 bg-color-1"
+        />
+        <div
+                className="story-card-background-2 bg-color-3"
+        />
+        <div
+                className="story-card-background-3 bg-color-4"
+        />
+        <div
+                className="story-card-background-4 bg-color-5"
+        />
+        <div
+                className="story-card-content"
+        >
                 <div
                         className="story-card-time"
                 >
-                        27/05/2018
+                        Invalid date
                 </div>
                 <div
                         className="story-card-title"
@@ -52,11 +66,25 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <div>
+          <div
+            className="story-card-background-1 bg-color-1"
+/>,
+          <div
+            className="story-card-background-2 bg-color-3"
+/>,
+          <div
+            className="story-card-background-3 bg-color-4"
+/>,
+          <div
+            className="story-card-background-4 bg-color-5"
+/>,
+          <div
+            className="story-card-content"
+>
             <div
                         className="story-card-time"
             >
-                        27/05/2018
+                        Invalid date
             </div>
             <div
                         className="story-card-title"
@@ -74,7 +102,7 @@ ShallowWrapper {
             className="story-card-link"
 />,
         ],
-        "className": "story-card",
+        "className": "story-card bg-color-2",
         "href": undefined,
       },
       "ref": null,
@@ -84,11 +112,55 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
+            "className": "story-card-background-1 bg-color-1",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "story-card-background-2 bg-color-3",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "story-card-background-3 bg-color-4",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "story-card-background-4 bg-color-5",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
             "children": Array [
               <div
                 className="story-card-time"
 >
-                27/05/2018
+                Invalid date
 </div>,
               <div
                 className="story-card-title"
@@ -99,6 +171,7 @@ ShallowWrapper {
                 By 
 </div>,
             ],
+            "className": "story-card-content",
           },
           "ref": null,
           "rendered": Array [
@@ -107,11 +180,11 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "27/05/2018",
+                "children": "Invalid date",
                 "className": "story-card-time",
               },
               "ref": null,
-              "rendered": "27/05/2018",
+              "rendered": "Invalid date",
               "type": "div",
             },
             Object {
@@ -183,14 +256,28 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": <a
-          className="story-card"
+          className="story-card bg-color-2"
           href={undefined}
 >
-          <div>
+          <div
+                    className="story-card-background-1 bg-color-1"
+          />
+          <div
+                    className="story-card-background-2 bg-color-3"
+          />
+          <div
+                    className="story-card-background-3 bg-color-4"
+          />
+          <div
+                    className="story-card-background-4 bg-color-5"
+          />
+          <div
+                    className="story-card-content"
+          >
                     <div
                               className="story-card-time"
                     >
-                              27/05/2018
+                              Invalid date
                     </div>
                     <div
                               className="story-card-title"
@@ -217,11 +304,25 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <div>
+            <div
+              className="story-card-background-1 bg-color-1"
+/>,
+            <div
+              className="story-card-background-2 bg-color-3"
+/>,
+            <div
+              className="story-card-background-3 bg-color-4"
+/>,
+            <div
+              className="story-card-background-4 bg-color-5"
+/>,
+            <div
+              className="story-card-content"
+>
               <div
                             className="story-card-time"
               >
-                            27/05/2018
+                            Invalid date
               </div>
               <div
                             className="story-card-title"
@@ -239,7 +340,7 @@ ShallowWrapper {
               className="story-card-link"
 />,
           ],
-          "className": "story-card",
+          "className": "story-card bg-color-2",
           "href": undefined,
         },
         "ref": null,
@@ -249,11 +350,55 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
+              "className": "story-card-background-1 bg-color-1",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "story-card-background-2 bg-color-3",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "story-card-background-3 bg-color-4",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "story-card-background-4 bg-color-5",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
               "children": Array [
                 <div
                   className="story-card-time"
 >
-                  27/05/2018
+                  Invalid date
 </div>,
                 <div
                   className="story-card-title"
@@ -264,6 +409,7 @@ ShallowWrapper {
                   By 
 </div>,
               ],
+              "className": "story-card-content",
             },
             "ref": null,
             "rendered": Array [
@@ -272,11 +418,11 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "27/05/2018",
+                  "children": "Invalid date",
                   "className": "story-card-time",
                 },
                 "ref": null,
-                "rendered": "27/05/2018",
+                "rendered": "Invalid date",
                 "type": "div",
               },
               Object {

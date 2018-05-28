@@ -1,0 +1,35 @@
+/**
+ * COLOUR PALETTE
+ *
+ * We've kept the original orange that HN uses
+ * And mixed in some vintage-y looking colours
+ *
+ * These colours will be used on background mainly
+ * so we'll create some background classes for each colour as well
+ *
+ * NOTICE: I prefer to work with the hsl color format
+ * it's a lot more intuitive than hex or rgb, and we can easily
+ * increase/reduce lightness and saturation
+ *
+ * hsl(24, 100%, 50%)
+ * hsl(51, 58%, 82%)
+ * hsl(63, 52%, 72%)
+ * hsl(36, 72%, 70%)
+ * hsl(25, 51%, 13%)
+ */
+
+.bg-color-1 {
+  background-color: hsl(24, 100%, 50%);
+}
+.bg-color-2 {
+  background-color: hsl(51, 58%, 82%);
+}
+.bg-color-3 {
+  background-color: hsl(63, 52%, 72%);
+}
+.bg-color-4 {
+  background-color: hsl(36, 72%, 70%);
+}
+.bg-color-5 {
+  background-color: hsl(25, 51%, 13%);
+}

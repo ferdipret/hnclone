@@ -32,6 +32,10 @@ describe('App', () => {
     expect(app).toMatchSnapshot()
   })
 
+  it('contains a header component', () => {
+    expect(app.find('Header').exists()).toBe(true)
+  })
+
   it('should get it`s default state from the `store` function', () => {
     expect(app.state()).toEqual(defaultState)
   })

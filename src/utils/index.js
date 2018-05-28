@@ -3,7 +3,7 @@ export function calculateNextStoryIds(idList, current) {
 }
 
 export function cleanUrl(string) {
-  const regex = /\/\/([^\/,\s]+?\.[^\/,\s]+?)(?=\/|,|\s|$|\?|#)/g
+  const regex = /\/\/([^/,\s]+?\.[^/,\s]+?)(?=\/|,|\s|$|\?|#)/g
   const cleanArray = regex.exec(string)
 
   if (cleanArray) {
