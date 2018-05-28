@@ -27,12 +27,15 @@ class App extends Component {
   }
 
   render() {
-    const { stories } = this.state
+    const { stories, storiesIdsList } = this.state
     return (
       <React.Fragment>
         <Header />
         <StoriesList stories={stories} />
-        <ShowMoreBtn fetchMoreStories={this.fetchMoreStories} />
+        <ShowMoreBtn
+          fetchMoreStories={this.fetchMoreStories}
+          storiesLeft={storiesIdsList.length - stories.length}
+        />
       </React.Fragment>
     )
   }

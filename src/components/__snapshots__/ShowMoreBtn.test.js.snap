@@ -1,10 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ShowMoreBtn renders properly 1`] = `
-ShallowWrapper {
+ReactWrapper {
   "length": 1,
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <ShowMoreBtn />,
+  Symbol(enzyme.__unrendered__): <ShowMoreBtn
+    storiesLeft={100}
+/>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -12,32 +13,85 @@ ShallowWrapper {
     "simulateEvent": [Function],
     "unmount": [Function],
   },
+  Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "host",
+    "nodeType": "function",
     "props": Object {
-      "children": "SHOW MORE",
-      "onClick": undefined,
-      "type": "action",
+      "storiesLeft": 100,
     },
     "ref": null,
-    "rendered": "SHOW MORE",
-    "type": "button",
+    "rendered": Object {
+      "instance": <button
+        class="show-more-btn"
+        type="action"
+>
+        SHOW MORE (
+        100
+        )
+</button>,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          "SHOW MORE (",
+          100,
+          ")",
+        ],
+        "className": "show-more-btn",
+        "onClick": undefined,
+        "type": "action",
+      },
+      "ref": null,
+      "rendered": Array [
+        "SHOW MORE (",
+        "100",
+        ")",
+      ],
+      "type": "button",
+    },
+    "type": [Function],
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "host",
+      "nodeType": "function",
       "props": Object {
-        "children": "SHOW MORE",
-        "onClick": undefined,
-        "type": "action",
+        "storiesLeft": 100,
       },
       "ref": null,
-      "rendered": "SHOW MORE",
-      "type": "button",
+      "rendered": Object {
+        "instance": <button
+          class="show-more-btn"
+          type="action"
+>
+          SHOW MORE (
+          100
+          )
+</button>,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "SHOW MORE (",
+            100,
+            ")",
+          ],
+          "className": "show-more-btn",
+          "onClick": undefined,
+          "type": "action",
+        },
+        "ref": null,
+        "rendered": Array [
+          "SHOW MORE (",
+          "100",
+          ")",
+        ],
+        "type": "button",
+      },
+      "type": [Function],
     },
   ],
   Symbol(enzyme.__options__): Object {

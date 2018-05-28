@@ -24,6 +24,7 @@ ShallowWrapper {
 />,
         <ShowMoreBtn
           fetchMoreStories={[Function]}
+          storiesLeft={0}
 />,
       ],
     },
@@ -55,6 +56,7 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "fetchMoreStories": [Function],
+          "storiesLeft": 0,
         },
         "ref": null,
         "rendered": null,
@@ -76,6 +78,7 @@ ShallowWrapper {
 />,
           <ShowMoreBtn
             fetchMoreStories={[Function]}
+            storiesLeft={0}
 />,
         ],
       },
@@ -107,6 +110,7 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "fetchMoreStories": [Function],
+            "storiesLeft": 0,
           },
           "ref": null,
           "rendered": null,

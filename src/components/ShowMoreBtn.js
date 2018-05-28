@@ -1,10 +1,16 @@
 import React from 'react'
+import '../styles/button.css'
 
-function ShowMoreBtn({ fetchMoreStories }) {
+function ShowMoreBtn({ fetchMoreStories, storiesLeft }) {
   return (
-    <button type="action" onClick={fetchMoreStories}>
-      SHOW MORE
-    </button>
+    storiesLeft > 0 && (
+      <button
+        className="show-more-btn"
+        type="action"
+        onClick={fetchMoreStories}>
+        SHOW MORE ({storiesLeft})
+      </button>
+    )
   )
 }
 
