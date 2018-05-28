@@ -18,26 +18,23 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": <a
-        className="story-card"
+        className="story-card bg-color-2"
         href={undefined}
 >
         <div
-                className="story-card-background-1"
+                className="story-card-background-1 bg-color-1"
         />
         <div
-                className="story-card-background-2"
+                className="story-card-background-2 bg-color-3"
         />
         <div
-                className="story-card-background-3"
+                className="story-card-background-3 bg-color-4"
         />
         <div
-                className="story-card-background-4"
+                className="story-card-background-4 bg-color-5"
         />
         <div
-                className="story-card-background-5"
-        />
-        <div
-                className="\${story-card-content"
+                className="story-card-content"
         >
                 <div
                         className="story-card-time"
@@ -70,22 +67,19 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <div
-            className="story-card-background-1"
+            className="story-card-background-1 bg-color-1"
 />,
           <div
-            className="story-card-background-2"
+            className="story-card-background-2 bg-color-3"
 />,
           <div
-            className="story-card-background-3"
+            className="story-card-background-3 bg-color-4"
 />,
           <div
-            className="story-card-background-4"
+            className="story-card-background-4 bg-color-5"
 />,
           <div
-            className="story-card-background-5"
-/>,
-          <div
-            className="\${story-card-content"
+            className="story-card-content"
 >
             <div
                         className="story-card-time"
@@ -108,7 +102,7 @@ ShallowWrapper {
             className="story-card-link"
 />,
         ],
-        "className": "story-card",
+        "className": "story-card bg-color-2",
         "href": undefined,
       },
       "ref": null,
@@ -118,7 +112,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "className": "story-card-background-1",
+            "className": "story-card-background-1 bg-color-1",
           },
           "ref": null,
           "rendered": null,
@@ -129,7 +123,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "className": "story-card-background-2",
+            "className": "story-card-background-2 bg-color-3",
           },
           "ref": null,
           "rendered": null,
@@ -140,7 +134,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "className": "story-card-background-3",
+            "className": "story-card-background-3 bg-color-4",
           },
           "ref": null,
           "rendered": null,
@@ -151,18 +145,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "className": "story-card-background-4",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": "div",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "className": "story-card-background-5",
+            "className": "story-card-background-4 bg-color-5",
           },
           "ref": null,
           "rendered": null,
@@ -188,7 +171,7 @@ ShallowWrapper {
                 By 
 </div>,
             ],
-            "className": "\${story-card-content",
+            "className": "story-card-content",
           },
           "ref": null,
           "rendered": Array [
@@ -273,26 +256,23 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": <a
-          className="story-card"
+          className="story-card bg-color-2"
           href={undefined}
 >
           <div
-                    className="story-card-background-1"
+                    className="story-card-background-1 bg-color-1"
           />
           <div
-                    className="story-card-background-2"
+                    className="story-card-background-2 bg-color-3"
           />
           <div
-                    className="story-card-background-3"
+                    className="story-card-background-3 bg-color-4"
           />
           <div
-                    className="story-card-background-4"
+                    className="story-card-background-4 bg-color-5"
           />
           <div
-                    className="story-card-background-5"
-          />
-          <div
-                    className="\${story-card-content"
+                    className="story-card-content"
           >
                     <div
                               className="story-card-time"
@@ -325,22 +305,19 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <div
-              className="story-card-background-1"
+              className="story-card-background-1 bg-color-1"
 />,
             <div
-              className="story-card-background-2"
+              className="story-card-background-2 bg-color-3"
 />,
             <div
-              className="story-card-background-3"
+              className="story-card-background-3 bg-color-4"
 />,
             <div
-              className="story-card-background-4"
+              className="story-card-background-4 bg-color-5"
 />,
             <div
-              className="story-card-background-5"
-/>,
-            <div
-              className="\${story-card-content"
+              className="story-card-content"
 >
               <div
                             className="story-card-time"
@@ -363,7 +340,7 @@ ShallowWrapper {
               className="story-card-link"
 />,
           ],
-          "className": "story-card",
+          "className": "story-card bg-color-2",
           "href": undefined,
         },
         "ref": null,
@@ -373,7 +350,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "className": "story-card-background-1",
+              "className": "story-card-background-1 bg-color-1",
             },
             "ref": null,
             "rendered": null,
@@ -384,7 +361,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "className": "story-card-background-2",
+              "className": "story-card-background-2 bg-color-3",
             },
             "ref": null,
             "rendered": null,
@@ -395,7 +372,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "className": "story-card-background-3",
+              "className": "story-card-background-3 bg-color-4",
             },
             "ref": null,
             "rendered": null,
@@ -406,18 +383,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "className": "story-card-background-4",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": "div",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "className": "story-card-background-5",
+              "className": "story-card-background-4 bg-color-5",
             },
             "ref": null,
             "rendered": null,
@@ -443,7 +409,7 @@ ShallowWrapper {
                   By 
 </div>,
               ],
-              "className": "\${story-card-content",
+              "className": "story-card-content",
             },
             "ref": null,
             "rendered": Array [

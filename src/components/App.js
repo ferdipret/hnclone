@@ -5,6 +5,8 @@ import * as actions from '../actions'
 import { calculateNextStoryIds } from '../utils'
 import StoriesList from './StoriesList'
 
+import Header from './Header'
+
 class App extends Component {
   constructor() {
     super()
@@ -28,7 +30,7 @@ class App extends Component {
     const { stories } = this.state
     return (
       <React.Fragment>
-        <h1 className="app-title">App Component</h1>
+        <Header />
         <StoriesList stories={stories} />
       </React.Fragment>
     )
